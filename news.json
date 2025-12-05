@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Nueva librería de IA para desarrolladores",
+    "link": "https://example.com/post1",
+    "pubDate": "2025-12-05T08:00:00Z",
+    "description": "Esta librería permite integrar modelos generativos en apps web..."
+  },
+  {
+    "title": "Backend seguro con IA",
+    "link": "https://example.com/post2",
+    "pubDate": "2025-12-05T07:30:00Z",
+    "description": "Implementaciones de ciberseguridad y machine learning..."
+  }
+]
