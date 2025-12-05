@@ -32,6 +32,14 @@
     .card {
       background-color: var(--card);
       color: var(--foreground);
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effects para cada card */
+    .card:hover {
+      background-color: var(--secondary);
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
 
     .card p {
@@ -58,11 +66,11 @@
 
         news.forEach((item) => {
           const div = document.createElement('div');
-          div.className = "card p-4 rounded shadow hover:shadow-lg transition";
+          div.className = "card p-4 rounded shadow transition";
           div.innerHTML = `
             <a href="${item.link}" target="_blank" class="font-semibold text-lg">${item.title}</a>
-            <p class="text-sm">${new Date(item.pubDate).toLocaleString()}</p>
-            <p class="mt-1">${item.description}</p>
+            <p class="text-sm">${new Date(item.isoDate).toLocaleString()}</p>
+            <p class="mt-1">${item.contentSnippet || ""}</p>
           `;
           container.appendChild(div);
         });
